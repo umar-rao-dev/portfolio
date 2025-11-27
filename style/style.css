@@ -549,6 +549,101 @@ section {
   color: white;
 }
 
+/* Resume Download Button */
+.resume-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.resume-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background-color: #3b82f6; /* slightly brighter accent for hover */
+}
+
+/* Dark mode compatibility */
+.dark-mode .resume-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.dark-mode .resume-btn:hover {
+  background-color: #60a5fa; /* lighter hover in dark mode */
+}
+/* Button wrapper alignment */
+.resume-btn-wrapper {
+  display: flex;
+  justify-content: center; /* center horizontally on desktop */
+  margin-top: 2rem;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .resume-btn-wrapper {
+    justify-content: center; /* stays centered */
+    width: 100%;
+  }
+
+  .resume-btn {
+    width: 80%; /* make button take more space on smaller screens */
+    max-width: 300px; /* prevent it from being too wide */
+  }
+}
+
+/* Resume Download Button */
+.resume-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.resume-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background-color: #3b82f6; /* slightly brighter accent for hover */
+}
+
+/* Dark mode compatibility */
+.dark-mode .resume-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.dark-mode .resume-btn:hover {
+  background-color: #60a5fa; /* lighter hover in dark mode */
+}
+
 /* Skills Section */
 .skills-grid {
   display: grid;
