@@ -73,7 +73,7 @@ function initMobileMenu() {
 function initSmoothScroll() {
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
+            // e.preventDefault();
             const targetId = link.getAttribute('href');
             const targetSection = document.querySelector(targetId);
             
